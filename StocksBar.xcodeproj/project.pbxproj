@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A301F3302275982600A2327B /* StockDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301F32F2275982600A2327B /* StockDataSource.swift */; };
+		A301F33422759BAF00A2327B /* StockTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301F33322759BAF00A2327B /* StockTableCellView.swift */; };
+		A301F33622759BBC00A2327B /* StockTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A301F33522759BBC00A2327B /* StockTableCellView.xib */; };
+		A301F3392275A03800A2327B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301F3382275A03800A2327B /* Colors.swift */; };
+		A301F33B2275A70400A2327B /* StockFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301F33A2275A70400A2327B /* StockFooterView.swift */; };
+		A301F33D2275B7F000A2327B /* StockHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301F33C2275B7F000A2327B /* StockHeaderView.swift */; };
+		A301F33F2275DB0200A2327B /* OpenSettingMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301F33E2275DB0200A2327B /* OpenSettingMenuAction.swift */; };
+		A30D52D2228AE94600F80BB8 /* AboutWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30D52D1228AE94600F80BB8 /* AboutWindow.storyboard */; };
+		A30D52D4228AEB5D00F80BB8 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D52D3228AEB5D00F80BB8 /* AboutWindowController.swift */; };
+		A3148DD42279229C008B2A7B /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3148DD32279229C008B2A7B /* Throttler.swift */; };
+		A3191010227FBB6000D162A9 /* StockRemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A319100E227FBB6000D162A9 /* StockRemindViewController.swift */; };
+		A3191015228063ED00D162A9 /* StockRemindWinowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3191014228063ED00D162A9 /* StockRemindWinowController.swift */; };
+		A3191017228064D400D162A9 /* NSStoryboard+SX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3191016228064D400D162A9 /* NSStoryboard+SX.swift */; };
+		A330741B227EC49A006A9311 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330741A227EC49A006A9311 /* AppPreferences.swift */; };
+		A349894F22700BED002F7898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349894E22700BED002F7898 /* AppDelegate.swift */; };
+		A349895322700BEF002F7898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A349895222700BEF002F7898 /* Assets.xcassets */; };
+		A349895622700BEF002F7898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A349895422700BEF002F7898 /* Main.storyboard */; };
+		A34A1115228AEE89007A1323 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34A1114228AEE89007A1323 /* AboutViewController.swift */; };
+		A3503F572278504500215360 /* StockSearchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3503F562278504500215360 /* StockSearchCellView.swift */; };
+		A3503F592278505100215360 /* StockSearchCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3503F582278505100215360 /* StockSearchCellView.xib */; };
+		A3503F5B2278559F00215360 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3503F5A2278559F00215360 /* MainViewController.swift */; };
+		A385D1292289262B004E1778 /* KLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385D1282289262B004E1778 /* KLine.swift */; };
+		A3A67FCD227F10B200313A0D /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A67FCC227F10B200313A0D /* Reminder.swift */; };
+		A3BF12A3228C34E60063BCA3 /* GeneralPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF12A1228C34E50063BCA3 /* GeneralPreferenceViewController.swift */; };
+		A3BF12A4228C34E60063BCA3 /* GeneralPreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3BF12A2228C34E50063BCA3 /* GeneralPreferenceViewController.xib */; };
+		A3BF12A7228C35CE0063BCA3 /* AdvancedPreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF12A5228C35CE0063BCA3 /* AdvancedPreferenceViewController.swift */; };
+		A3BF12A8228C35CE0063BCA3 /* AdvancedPreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3BF12A6228C35CE0063BCA3 /* AdvancedPreferenceViewController.xib */; };
+		A3C968E02277F66E00130EDF /* StockSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C968DF2277F66E00130EDF /* StockSearchViewController.swift */; };
+		A3C968E32277FEA300130EDF /* NSPopover+SX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C968E22277FEA300130EDF /* NSPopover+SX.swift */; };
+		A3D299BB228D0A030055F60D /* OpenAboutWindowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D299BA228D0A030055F60D /* OpenAboutWindowAction.swift */; };
+		A3DE7F1524AEF1E900C8FF70 /* TencentStocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE7F1424AEF1E900C8FF70 /* TencentStocksAPI.swift */; };
+		A3DE7F1724AEF61A00C8FF70 /* SinaStocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE7F1624AEF61A00C8FF70 /* SinaStocksAPI.swift */; };
+		A3DE7F1924AF0D4000C8FF70 /* String+SX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE7F1824AF0D4000C8FF70 /* String+SX.swift */; };
+		A3DEF1FF2272D21800FBE176 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF1FE2272D21800FBE176 /* Stock.swift */; };
+		A3DEF2012272D47F00FBE176 /* StocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF2002272D47F00FBE176 /* StocksAPI.swift */; };
+		A3DEF2082272D62E00FBE176 /* StocksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF2072272D62E00FBE176 /* StocksTableViewController.swift */; };
+		A3DEF20D2273084700FBE176 /* PopoverAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF20C2273084700FBE176 /* PopoverAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21F9D0BD71A6F61E591D4907 /* Pods-StocksBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksBar.release.xcconfig"; path = "Target Support Files/Pods-StocksBar/Pods-StocksBar.release.xcconfig"; sourceTree = "<group>"; };
+		A301F32F2275982600A2327B /* StockDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataSource.swift; sourceTree = "<group>"; };
+		A301F33322759BAF00A2327B /* StockTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableCellView.swift; sourceTree = "<group>"; };
+		A301F33522759BBC00A2327B /* StockTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableCellView.xib; sourceTree = "<group>"; };
+		A301F3382275A03800A2327B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A301F33A2275A70400A2327B /* StockFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFooterView.swift; sourceTree = "<group>"; };
+		A301F33C2275B7F000A2327B /* StockHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockHeaderView.swift; sourceTree = "<group>"; };
+		A301F33E2275DB0200A2327B /* OpenSettingMenuAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSettingMenuAction.swift; sourceTree = "<group>"; };
+		A30D52D1228AE94600F80BB8 /* AboutWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutWindow.storyboard; sourceTree = "<group>"; };
+		A30D52D3228AEB5D00F80BB8 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		A3148DD32279229C008B2A7B /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		A319100E227FBB6000D162A9 /* StockRemindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRemindViewController.swift; sourceTree = "<group>"; };
+		A3191014228063ED00D162A9 /* StockRemindWinowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRemindWinowController.swift; sourceTree = "<group>"; };
+		A3191016228064D400D162A9 /* NSStoryboard+SX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSStoryboard+SX.swift"; sourceTree = "<group>"; };
+		A330741A227EC49A006A9311 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		A349894B22700BED002F7898 /* StocksBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A349894E22700BED002F7898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A349895222700BEF002F7898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A349895522700BEF002F7898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A349895722700BEF002F7898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A349895822700BEF002F7898 /* StocksBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StocksBar.entitlements; sourceTree = "<group>"; };
+		A34A1114228AEE89007A1323 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A3503F562278504500215360 /* StockSearchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSearchCellView.swift; sourceTree = "<group>"; };
+		A3503F582278505100215360 /* StockSearchCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockSearchCellView.xib; sourceTree = "<group>"; };
+		A3503F5A2278559F00215360 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A385D1282289262B004E1778 /* KLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLine.swift; sourceTree = "<group>"; };
+		A3A67FCC227F10B200313A0D /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		A3BF12A1228C34E50063BCA3 /* GeneralPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferenceViewController.swift; sourceTree = "<group>"; };
+		A3BF12A2228C34E50063BCA3 /* GeneralPreferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralPreferenceViewController.xib; sourceTree = "<group>"; };
+		A3BF12A5228C35CE0063BCA3 /* AdvancedPreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPreferenceViewController.swift; sourceTree = "<group>"; };
+		A3BF12A6228C35CE0063BCA3 /* AdvancedPreferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedPreferenceViewController.xib; sourceTree = "<group>"; };
+		A3C968DF2277F66E00130EDF /* StockSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSearchViewController.swift; sourceTree = "<group>"; };
+		A3C968E22277FEA300130EDF /* NSPopover+SX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPopover+SX.swift"; sourceTree = "<group>"; };
+		A3D299BA228D0A030055F60D /* OpenAboutWindowAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAboutWindowAction.swift; sourceTree = "<group>"; };
+		A3DE7F1424AEF1E900C8FF70 /* TencentStocksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentStocksAPI.swift; sourceTree = "<group>"; };
+		A3DE7F1624AEF61A00C8FF70 /* SinaStocksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinaStocksAPI.swift; sourceTree = "<group>"; };
+		A3DE7F1824AF0D4000C8FF70 /* String+SX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SX.swift"; sourceTree = "<group>"; };
+		A3DEF1FE2272D21800FBE176 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		A3DEF2002272D47F00FBE176 /* StocksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAPI.swift; sourceTree = "<group>"; };
+		A3DEF2072272D62E00FBE176 /* StocksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTableViewController.swift; sourceTree = "<group>"; };
+		A3DEF20C2273084700FBE176 /* PopoverAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverAction.swift; sourceTree = "<group>"; };
+		ABC31EDE22B2F62C5B58DFCD /* Pods_StocksBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StocksBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA565643EA2C6EEEE955FFCF /* Pods-StocksBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksBar.debug.xcconfig"; path = "Target Support Files/Pods-StocksBar/Pods-StocksBar.debug.xcconfig"; sourceTree = "<group>"; };
+		FE7AE462279E7494002D6F0C /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Alamofire; sourceTree = "<group>"; };
+		FE7AE463279E74B1002D6F0C /* LaunchAtLogin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LaunchAtLogin; sourceTree = "<group>"; };
+		FE7AE464279E74BF002D6F0C /* SnapKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SnapKit; sourceTree = "<group>"; };
+		FE7AE466279E7503002D6F0C /* Preferences */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Preferences; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A349894822700BED002F7898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37CB3937B7534B0CD235D304 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA565643EA2C6EEEE955FFCF /* Pods-StocksBar.debug.xcconfig */,
+				21F9D0BD71A6F61E591D4907 /* Pods-StocksBar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8BA1137991DE0B6C3658E3A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABC31EDE22B2F62C5B58DFCD /* Pods_StocksBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A301F32E2275981600A2327B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A301F32F2275982600A2327B /* StockDataSource.swift */,
+				A330741A227EC49A006A9311 /* AppPreferences.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A301F3372275A02D00A2327B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A301F3382275A03800A2327B /* Colors.swift */,
+				A3148DD32279229C008B2A7B /* Throttler.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A30D52D0228AE91B00F80BB8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A30D52D1228AE94600F80BB8 /* AboutWindow.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A349894222700BED002F7898 = {
+			isa = PBXGroup;
+			children = (
+				FE7AE461279E7494002D6F0C /* Packages */,
+				A349894D22700BED002F7898 /* StocksBar */,
+				A349894C22700BED002F7898 /* Products */,
+				37CB3937B7534B0CD235D304 /* Pods */,
+				8BA1137991DE0B6C3658E3A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A349894C22700BED002F7898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A349894B22700BED002F7898 /* StocksBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A349894D22700BED002F7898 /* StocksBar */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEF20B2273083300FBE176 /* Actions */,
+				A301F3372275A02D00A2327B /* Common */,
+				A301F32E2275981600A2327B /* DataSource */,
+				A3C968E12277FE8B00130EDF /* Extensions */,
+				A3DEF1FD2272D20D00FBE176 /* Models */,
+				A3DEF1FC2272D20300FBE176 /* Networking */,
+				A349895F227010E2002F7898 /* ViewControllers */,
+				A3DEF2022272D48900FBE176 /* Views */,
+				A30D52D0228AE91B00F80BB8 /* Storyboards */,
+				A349895E227010BE002F7898 /* Supporting Files */,
+				A349894E22700BED002F7898 /* AppDelegate.swift */,
+				A349895822700BEF002F7898 /* StocksBar.entitlements */,
+			);
+			path = StocksBar;
+			sourceTree = "<group>";
+		};
+		A349895E227010BE002F7898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A349895422700BEF002F7898 /* Main.storyboard */,
+				A349895722700BEF002F7898 /* Info.plist */,
+				A349895222700BEF002F7898 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A349895F227010E2002F7898 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3503F5A2278559F00215360 /* MainViewController.swift */,
+				A3DEF2072272D62E00FBE176 /* StocksTableViewController.swift */,
+				A3C968DF2277F66E00130EDF /* StockSearchViewController.swift */,
+				A319100E227FBB6000D162A9 /* StockRemindViewController.swift */,
+				A3191014228063ED00D162A9 /* StockRemindWinowController.swift */,
+				A30D52D3228AEB5D00F80BB8 /* AboutWindowController.swift */,
+				A34A1114228AEE89007A1323 /* AboutViewController.swift */,
+				A3BF12A1228C34E50063BCA3 /* GeneralPreferenceViewController.swift */,
+				A3BF12A2228C34E50063BCA3 /* GeneralPreferenceViewController.xib */,
+				A3BF12A5228C35CE0063BCA3 /* AdvancedPreferenceViewController.swift */,
+				A3BF12A6228C35CE0063BCA3 /* AdvancedPreferenceViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3C968E12277FE8B00130EDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3C968E22277FEA300130EDF /* NSPopover+SX.swift */,
+				A3191016228064D400D162A9 /* NSStoryboard+SX.swift */,
+				A3DE7F1824AF0D4000C8FF70 /* String+SX.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3DEF1FC2272D20300FBE176 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEF2002272D47F00FBE176 /* StocksAPI.swift */,
+				A3DE7F1424AEF1E900C8FF70 /* TencentStocksAPI.swift */,
+				A3DE7F1624AEF61A00C8FF70 /* SinaStocksAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A3DEF1FD2272D20D00FBE176 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3A67FCC227F10B200313A0D /* Reminder.swift */,
+				A3DEF1FE2272D21800FBE176 /* Stock.swift */,
+				A385D1282289262B004E1778 /* KLine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3DEF2022272D48900FBE176 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A301F33C2275B7F000A2327B /* StockHeaderView.swift */,
+				A301F33A2275A70400A2327B /* StockFooterView.swift */,
+				A301F33322759BAF00A2327B /* StockTableCellView.swift */,
+				A301F33522759BBC00A2327B /* StockTableCellView.xib */,
+				A3503F562278504500215360 /* StockSearchCellView.swift */,
+				A3503F582278505100215360 /* StockSearchCellView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3DEF20B2273083300FBE176 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEF20C2273084700FBE176 /* PopoverAction.swift */,
+				A301F33E2275DB0200A2327B /* OpenSettingMenuAction.swift */,
+				A3D299BA228D0A030055F60D /* OpenAboutWindowAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		FE7AE461279E7494002D6F0C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FE7AE462279E7494002D6F0C /* Alamofire */,
+				FE7AE463279E74B1002D6F0C /* LaunchAtLogin */,
+				FE7AE464279E74BF002D6F0C /* SnapKit */,
+				FE7AE466279E7503002D6F0C /* Preferences */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A349894A22700BED002F7898 /* StocksBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A349895B22700BEF002F7898 /* Build configuration list for PBXNativeTarget "StocksBar" */;
+			buildPhases = (
+				07B4C2D1506CCC55ADCBA3CD /* [CP] Check Pods Manifest.lock */,
+				A349894722700BED002F7898 /* Sources */,
+				A349894822700BED002F7898 /* Frameworks */,
+				A349894922700BED002F7898 /* Resources */,
+				E40F2B3A312B77288516DCA0 /* [CP] Embed Pods Frameworks */,
+				A31E3A5C228015D4007FD657 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StocksBar;
+			productName = StocksBar;
+			productReference = A349894B22700BED002F7898 /* StocksBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A349894322700BED002F7898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = alexiscn;
+				TargetAttributes = {
+					A349894A22700BED002F7898 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A349894622700BED002F7898 /* Build configuration list for PBXProject "StocksBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A349894222700BED002F7898;
+			productRefGroup = A349894C22700BED002F7898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A349894A22700BED002F7898 /* StocksBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A349894922700BED002F7898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A301F33622759BBC00A2327B /* StockTableCellView.xib in Resources */,
+				A3503F592278505100215360 /* StockSearchCellView.xib in Resources */,
+				A3BF12A4228C34E60063BCA3 /* GeneralPreferenceViewController.xib in Resources */,
+				A30D52D2228AE94600F80BB8 /* AboutWindow.storyboard in Resources */,
+				A3BF12A8228C35CE0063BCA3 /* AdvancedPreferenceViewController.xib in Resources */,
+				A349895322700BEF002F7898 /* Assets.xcassets in Resources */,
+				A349895622700BEF002F7898 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07B4C2D1506CCC55ADCBA3CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StocksBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31E3A5C228015D4007FD657 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PROJECT_DIR}/Pods/LaunchAtLogin/LaunchAtLogin/copy-helper.sh\"\n";
+		};
+		E40F2B3A312B77288516DCA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StocksBar/Pods-StocksBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StocksBar/Pods-StocksBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StocksBar/Pods-StocksBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A349894722700BED002F7898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3C968E32277FEA300130EDF /* NSPopover+SX.swift in Sources */,
+				A301F33D2275B7F000A2327B /* StockHeaderView.swift in Sources */,
+				A3148DD42279229C008B2A7B /* Throttler.swift in Sources */,
+				A3DE7F1524AEF1E900C8FF70 /* TencentStocksAPI.swift in Sources */,
+				A301F3392275A03800A2327B /* Colors.swift in Sources */,
+				A3D299BB228D0A030055F60D /* OpenAboutWindowAction.swift in Sources */,
+				A3A67FCD227F10B200313A0D /* Reminder.swift in Sources */,
+				A301F33422759BAF00A2327B /* StockTableCellView.swift in Sources */,
+				A3DEF20D2273084700FBE176 /* PopoverAction.swift in Sources */,
+				A3DEF2082272D62E00FBE176 /* StocksTableViewController.swift in Sources */,
+				A3DE7F1724AEF61A00C8FF70 /* SinaStocksAPI.swift in Sources */,
+				A385D1292289262B004E1778 /* KLine.swift in Sources */,
+				A301F33F2275DB0200A2327B /* OpenSettingMenuAction.swift in Sources */,
+				A30D52D4228AEB5D00F80BB8 /* AboutWindowController.swift in Sources */,
+				A349894F22700BED002F7898 /* AppDelegate.swift in Sources */,
+				A3BF12A3228C34E60063BCA3 /* GeneralPreferenceViewController.swift in Sources */,
+				A3191015228063ED00D162A9 /* StockRemindWinowController.swift in Sources */,
+				A330741B227EC49A006A9311 /* AppPreferences.swift in Sources */,
+				A3C968E02277F66E00130EDF /* StockSearchViewController.swift in Sources */,
+				A3503F5B2278559F00215360 /* MainViewController.swift in Sources */,
+				A3503F572278504500215360 /* StockSearchCellView.swift in Sources */,
+				A3191017228064D400D162A9 /* NSStoryboard+SX.swift in Sources */,
+				A3BF12A7228C35CE0063BCA3 /* AdvancedPreferenceViewController.swift in Sources */,
+				A3DEF1FF2272D21800FBE176 /* Stock.swift in Sources */,
+				A3DEF2012272D47F00FBE176 /* StocksAPI.swift in Sources */,
+				A301F33B2275A70400A2327B /* StockFooterView.swift in Sources */,
+				A3191010227FBB6000D162A9 /* StockRemindViewController.swift in Sources */,
+				A3DE7F1924AF0D4000C8FF70 /* String+SX.swift in Sources */,
+				A34A1115228AEE89007A1323 /* AboutViewController.swift in Sources */,
+				A301F3302275982600A2327B /* StockDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A349895422700BEF002F7898 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A349895522700BEF002F7898 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A349895922700BEF002F7898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A349895A22700BEF002F7898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A349895C22700BEF002F7898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA565643EA2C6EEEE955FFCF /* Pods-StocksBar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StocksBar/StocksBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 18;
+				DEVELOPMENT_TEAM = A97S9DNTCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/StocksBar/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.StocksBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A349895D22700BEF002F7898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F9D0BD71A6F61E591D4907 /* Pods-StocksBar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StocksBar/StocksBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 18;
+				DEVELOPMENT_TEAM = A97S9DNTCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/StocksBar/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.StocksBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A349894622700BED002F7898 /* Build configuration list for PBXProject "StocksBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A349895922700BEF002F7898 /* Debug */,
+				A349895A22700BEF002F7898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A349895B22700BEF002F7898 /* Build configuration list for PBXNativeTarget "StocksBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A349895C22700BEF002F7898 /* Debug */,
+				A349895D22700BEF002F7898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A349894322700BED002F7898 /* Project object */;
+}

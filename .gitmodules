@@ -1,0 +1,12 @@
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "SnapKit"]
+	path = SnapKit
+	url = https://github.com/SnapKit/SnapKit
+[submodule "Preferences"]
+	path = Preferences
+	url = https://github.com/thierryH91200/Preferences.git
+[submodule "LaunchAtLogin"]
+	path = LaunchAtLogin
+	url = https://github.com/sindresorhus/LaunchAtLogin.git
